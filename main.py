@@ -5,6 +5,7 @@ from tkinter import PhotoImage
 # Criando a janela do app
 janela = tk.Tk()
 janela.title("Lista de Tarefas")
+janela.configure(bg="#F0F0F0")
 janela.geometry("500x500")
 
 # Loop principal do app
