@@ -23,6 +23,16 @@ class Tarefa:
     def esta_atrasada(self):
         return datetime.now() > self.data_vencimento and self.status == "Pendente"
     
+    # Criando funções para editar titulo, etc...
+    def editar_titulo(self, titulo):
+        self.titulo = titulo
+
+    def editar_descricao(self, descricao):
+        self.descricao = descricao
+
+    def editar_data_vencimento(self, data_vencimento):
+        self.data = datetime.strptime("%d/%m/%Y")
+    
     # Definindo o retorno para o usuario
     def detalhes(self):
         status = "Atrasada" if self.esta_atrasada() else self.status
